@@ -1,0 +1,314 @@
+$colooBlueBordr: rgb(10, 135, 218);
+$color: black;
+$borderColor: #dadce0;
+$lobalColor: #d93025;
+$adavncBotton: #4d90fe;
+$backgroundColorWhit: rgb(248, 248, 248);
+
+
+
+%loginButton{
+  background-color: #4683ea;
+  border-radius:5%;
+  padding: 10px 18px;
+  color:$backgroundColorWhit;
+
+
+}
+%butoonIteam {
+  border-radius: 5px;
+  text-decoration-line: none;
+  border: 0px solid $borderColor;
+  font-size: 14px;
+}
+
+
+%nav {
+ text-align: right;
+  margin: 20px;
+  justify-content: center;
+  // font: 1em sans-serif;
+  a {
+    margin: 20px;
+    text-decoration-line: none;
+    color: $color;
+  }
+  a:hover{
+  text-decoration-line: underline;
+  }
+}
+
+
+
+body {
+  text-align: center;
+
+  font-family:  arial,sans-serif;
+}
+
+.nav{
+  @extend %nav;
+  margin-bottom: 200px;
+  .login{
+   @extend %loginButton
+  }
+  .login:hover{
+    text-decoration-line: none;
+ 
+    }
+
+}
+
+.navAdvanced {
+  @extend %nav;
+  height:100px;
+  margin-top: 20px;
+
+  .login{
+    @extend %loginButton
+      }
+    
+  .login:hover{
+        text-decoration-line: none;
+        }
+    
+}
+
+.Logocontainer {
+  width: 700px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top:100px;
+  margin-bottom: 70px;
+  margin: 20px auto;
+  width: 638px;
+  width: auto;
+  max-width: 584px;
+
+}
+
+
+.imagPOstian {
+  position: absolute;
+  bottom:0%;
+  right: 23%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.imageLOg{
+ 
+color: $colooBlueBordr;
+ font-size: 15px;
+ font: 16px/16px roboto-regular, arial, sans-serif;
+
+}
+.logAdvaned {
+
+  text-align: left;
+  width: 45%;
+  float: left;
+  margin-left: 10px;
+
+}
+.SerachBox {
+  display: flex;
+  z-index: 3;
+  min-height: 44px;
+  border: 1px solid $borderColor;
+  box-shadow: none;
+  border-radius:30px;
+  margin: 20px auto;
+  width: 700px;
+  width: auto;
+  max-width: 550px;
+  padding:0PX 15PX;
+
+}
+
+.m-5{
+  // margin-top: 5px;
+margin: auto;
+padding: 2px 0px 0px 10px;
+color: rgb(211, 211, 211);
+font-size: 10px;
+}
+
+.SerachBox:hover {
+
+  box-shadow: 5px 5px 2px $borderColor;
+
+}
+
+%inputIteam {
+  margin: auto;
+  outline: none;
+  border: 0px solid $borderColor;
+  box-sizing: border-box;
+  font-weight: 100;
+  font-size: 100%;
+}
+
+.input {
+  @extend %inputIteam;
+  padding: 10px;
+  width: 80%;
+  -webkit-transitionrgb: 0.5s;
+  transition: 0.5s;
+
+}
+
+.input[type=text]:focus {
+  border: 0px solid $borderColor;
+}
+
+
+//  button design 
+
+
+.button {
+  margin: 11px;
+  @extend %butoonIteam;
+  background-color: $backgroundColorWhit;
+  color: $color;
+  padding: 11px;
+
+}
+
+.button:hover {
+  border: 1px solid $borderColor;
+}
+
+.button:focus {
+  background-color: $backgroundColorWhit;
+  border: 2px solid $colooBlueBordr;
+}
+
+// adavsed page styles
+.advansedInput {
+  @extend %inputIteam;
+  padding: 7px;
+  width: 100%;
+  border: 1px solid $borderColor;
+  
+
+}
+.advaneFont{
+  color: #4d4c4c;
+  text-align: left;
+
+  font-weight: bolder;
+  font-style: inherit;
+  font-size: 100%;
+  height: 50px;
+}
+
+.advansedInput[type=text]:focus {
+  border: 1px solid $colooBlueBordr;
+  
+}
+
+
+.gird {   
+max-width: 800px;
+width: 70%;
+grid-template-columns: 300px auto;
+margin-top: 30px;
+float: left;
+margin-left: 20px;
+display: grid;
+grid-row-gap: 20px;
+line-height: 16px;
+}
+
+
+.gird-item {
+  font-size: 17px;
+  text-align: left;
+ 
+}
+
+.advanclabel2{
+  margin-top: 33px;
+  width: 28%;
+  float: left;
+  margin-left: 15px;
+}
+
+.displafOff{
+  margin-top: 20px;
+  font-size: 13px;
+  height: 40px;
+  text-align: left;
+}
+
+.serachLink {
+  float: right;
+}
+
+.label {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.labelBox {
+  clear: both;
+  padding-top: 25px;
+  margin: 25px;
+  font-size: 20px;
+  margin: 25px 35px;
+  color: $lobalColor;
+  text-align: left;
+  height:100px;
+}
+
+
+.hr_line {
+  color:$borderColor;
+  clear: both;
+}
+
+
+
+.advan-button {
+  @extend %butoonIteam;
+  background-color: $adavncBotton;
+  padding: 10px 15px;
+  float: right;
+  color: $backgroundColorWhit;
+  border: 1px solid $borderColor;
+
+}
+
+.advan-button:hover {
+  border: 1px solid rgb(0, 75, 161);
+
+}
+
+
+.svgButton{
+background-color: white;
+border: 0px solid $borderColor ;
+color: #4683ea;
+font-size: 7px;
+
+
+padding: .5rem;
+width: 3.5rem;
+height: 3.5rem;
+
+border-radius: .25rem;
+cursor: pointer;
+}
+
+@media (max-width: 1170px) {
+  .gird{
+width: 95%;
+  }
+  .displafOff, .headOff{
+    display: none;
+  }
+  
+
+}
